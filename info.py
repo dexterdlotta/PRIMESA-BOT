@@ -11,8 +11,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '16483440'))
-API_HASH = environ.get('API_HASH', '3171ef43d6de27807dbb50ffebd1eed5')
+API_ID = int(environ.get('API_ID', '27535431'))
+API_HASH = environ.get('API_HASH', '060387bacdb35f95b8702bfc544beca8')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7897072460:AAFiP3CDtpKgXl3CfRAKmn-2hpKFlbDwMdA")
 
 Use this token to access the HTTP API:
@@ -32,10 +32,10 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002633322043'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-4768600511'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002584974085').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-4955369280').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -54,14 +54,14 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002484546460')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-4984282970')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For /batch command file store.
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]  # For Multiple Id Use One Space Between Each.
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-4829152147')).split()]  # For Multiple Id Use One Space Between Each.
 
 # This Channel Is For Delete Index File, Forward Your File In This Channel Which You Want To Delete Then Bot Automatically Delete That File From Database.
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]  # For Multiple Id Use One Space Between Each.
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-4769469552').split()]  # For Multiple Id Use One Space Between Each.
 
 
 # MongoDB information
@@ -95,9 +95,9 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 # Links
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviesprimesa')
-CHNL_LNK = environ.get('CHNL_LNK','https://t.me/+-VoOZvML1OkxZTRl')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+ZlBD_kFcex4yMTI1') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', '@DEXTERDLOTTA')
+CHNL_LNK = environ.get('CHNL_LNK','https://t.me/+91cGcVNHH7MzYjll')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+1bhlQnrbn7pkMGQ1') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', '@IGDEXTEROP')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
